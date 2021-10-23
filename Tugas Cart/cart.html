@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body style="margin-top: -16px; margin-left: 0; margin-right: 0;">
+    <div style="width: 100%; height: 100px; background-color: #ADA7AD;">
+        <div style="width: 20%; float: left; margin-top: 2%;">
+            <p style="text-align: center; font-weight: bold;">TOKOPAEDI.COM</p>
+        </div>
+        <div style="width: 60%; float: left; margin-top: 3%;">
+            <a href="#" style="padding: 30px;">Category 1</a> |
+            <a href="#" style="padding: 30px;">Category 2</a> |
+            <a href="#" style="padding: 30px;">Category 3</a>
+        </div>
+        <div style="width: 20%; float: left; margin-top: 3%;">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-shopping-cart"></i> Cart (1)
+        </div>
+    </div>
+    <div style="width: 100%; height: 500px;">
+        <div style="width: 60%; float: left;">
+            <h3 style="margin-top: 50px; margin-left: 60px;">Your Cart</h3>
+            <table style="border-collapse: collapse; margin-left: 60px; width: 100%;">
+                <tr>
+                    <th style="border-bottom: 1px solid black; border-top: 1px solid black; text-align: left; width: 50%;">Item</th>
+                    <th style="border-bottom: 1px solid black; border-top: 1px solid black; text-align: left; width: 25%;">Price</th>
+                    <th style="border-bottom: 1px solid black; border-top: 1px solid black; text-align: left; width: 25%;">Quantity</th>
+                </tr>
+                <tr>
+                    <td style="padding: 15px; padding-left: 0 !important; width: 50%;"><img src="sofa.png" alt="image" width="100px" height="100px" style="float: left;"><br><br> T-Shirt <br> Size: Small</td>
+                    <td style="padding: 15px; padding-left: 0 !important; width: 25%;">$20.00</td>
+                    <td style="padding: 15px; padding-left: 0 !important; width: 25%;">
+                        <select style="width: 40px;">
+                            <option value="1">1</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: right; border-bottom: 1px solid black; border-top: 1px solid black; padding: 10px;">Subtotal: $20.00</td>
+                </tr>
+            </table>
+        </div>
+        <div style="width: 40%; float: right;">
+            <table style="margin-top: 50px; margin-left: 80px; width: 70%; border-collapse: collapse; background-color: #ADA7AD;">
+                <tr>
+                    <th colspan="2" style="text-align: left; padding: 5px;">Summary (1 item)</th>
+                </tr>
+                <tr>
+                    <td style="padding: 5px; ">Subtotal</td>
+                    <td style="padding: 5px; ">$20.00</td>
+                </tr>
+                <tr>
+                    <td style="padding: 5px; ">Shipping</td>
+                    <td style="padding: 5px; text-align: right;">-</td>
+                </tr>
+                <tr>
+                    <td style="padding: 5px; ">Est. Taxes</td>
+                    <td style="padding: 5px; text-align: right;">-</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td style="padding: 5px; ">Total</td>
+                    <td style="padding: 5px; ">$20.00</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding: 5px;"><button style="background-color: blue; color: white; width: 100%; border: 3px solid black;">Checkout</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div style="width: 100%; height: 100px; position: fixed; left: 0; bottom: 0;">
+        <hr>
+        <div style="width: 50%;">
+            <p style="font-weight: bold; float: left; padding: 10px;">TOKOPAEDI.COM</p>
+            <div style="float: left; margin-top: 15px; padding: 10px;">
+                <a href="#" style="padding: 15px;">Category 1</a> | 
+                <a href="#" style="padding: 15px;">Category 2</a> |
+                <a href="#" style="padding: 15px;">Category 3</a>
+            </div>
+            <div style="position: absolute; margin-top: 50px; margin-left: 10px;">
+                <i class="fab fa-cc-visa fa-lg"></i>
+                <i class="fab fa-cc-mastercard fa-lg"></i>
+                <i class="fab fa-cc-amex fa-lg"></i>
+            </div>
+        </div>
+        <div style="width: 20%; float: right;">
+            <p style="margin-bottom: 0; margin-top: 20px;">Stay In Touch! Join our Newsletter.</p>
+            <input type="text" placeholder="Enter Email"><button>Subscribe</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum 3.1</title>
+</head>
+<body>
+    <div>
+        <h1 style="font-size: 20px;">Black Goose Bistro | Pizza-on-Demand</h1>
+        
+        <p>Our 12" wood-fired pizzas are available for delivery. Build your <br> custom pizza and we'll deliver it within an hour.</p>
+        
+        <p>Your Information</p>
+        
+        <form action="http://blackgoosebistro.com/pizza.php" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="customername"><br>
+            </div>
+            
+            <div style="margin-top: 10px;"></div>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address"><br>
+            </div>
+
+            <div style="margin-top: 10px;"></div>
+                <label for="telephone">Telephone Number:</label>
+                <input type="text" id="telephone" name="telephone"><br>
+            </div>
+
+            <div style="margin-top: 10px;"></div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+            </div>
+
+            <div style="margin-top: 10px;"></div>
+                <label for="delivery">Delivery Instruction:</label> <br>
+                <textarea name="instructions" id="delivery" cols="30" rows="10" placeholder="No more than 400 characters long" maxlength="400"></textarea>
+            </div>
+
+            <div>
+                <h2 style="font-size: 16px; margin-bottom: 0;">Design Your Dream Pizza:</h2>
+                <p style="margin-top: 0;">Pizza specs</p>
+
+                <label for="crust">Crust (Choose one):</label> <br>
+
+                <input type="radio" id="Classic white" name="crust" value="Classic white">
+                <label for="Classic white">Classic white</label><br>
+
+                <input type="radio" id="Multigrain" name="crust" value="Multigrain">
+                <label for="Multigrain">Multigrain</label><br>
+
+                <input type="radio" id="Cheese-stuffed crust" name="crust" value="Cheese-stuffed crust">
+                <label for="Cheese-stuffed crust">Cheese-stuffed crust</label><br>
+
+                <input type="radio" id="Gluten-free" name="crust" value="Gluten-free">
+                <label for="Gluten-free">Gluten-free</label><br>
+            </div>
+
+            <div>
+                <label for="crust">Toppings (Choose as many as you want):</label> <br>
+
+                <input type="checkbox" name="toppings[]" value="red sauce" checked>
+                <label for="Red sauce"> Red sauce</label><br>
+
+                <input type="checkbox" name="toppings[]" value="white sauce" id="White sauce">
+                <label for="White sauce"> White sauce</label><br>
+
+                <input type="checkbox" name="toppings[]" value="mozarella cheese" id="Mozarella cheese">
+                <label for="Mozarella cheese"> Mozarella cheese</label><br>
+
+                <input type="checkbox" name="toppings[]" value="pepperoni" id="Pepperoni">
+                <label for="Pepperoni"> Pepperoni</label><br>
+
+                <input type="checkbox" name="toppings[]" value="mushrooms" id="Mushrooms">
+                <label for="Mushrooms"> Mushrooms</label><br>
+
+                <input type="checkbox" name="toppings[]" value="peppers" id="Peppers">
+                <label for="Peppers"> Peppers</label><br>
+
+                <input type="checkbox" name="toppings[]" value="anchovies" id="Anchovies">
+                <label for="Anchovies"> Anchovies</label><br>
+            </div>
+
+            <div>
+                <p style="margin-bottom: 0;">Number</p>
+                <label for="number"> How many pizzas:</label>
+                <select name="pizzas" id="number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <button type="submit">Bring me a pizza!</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

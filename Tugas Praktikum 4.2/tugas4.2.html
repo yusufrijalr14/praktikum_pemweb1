@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 4.2</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            background-color: lightgrey;
+            width: 100%;
+            height: 100px;
+            border-bottom: 2px solid black;
+        }
+
+        .sitename-ul {
+            list-style-type: square;
+            float: left;
+            margin-top: 35px;
+            width: 20%;
+        }
+
+        .sitename-li {
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 25px;
+        }
+
+        .category-ul {
+            float: left;
+            margin-top: 35px;
+            width: 50%;
+            list-style: none;
+        }
+
+        .category-li {
+            float: left;
+        }
+
+        .category-li a {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .right-header {
+            float: left;
+            margin-top: 20px;
+        }
+
+        section {
+            margin-top: 50px;
+            width: 100%;
+            height: 600px;
+        }
+
+        .section-left {
+            float: left;
+            width: 50%;
+            height: 100px;
+            margin-left: 50px;
+        }
+
+        .text1 {
+            margin-left: 50px;
+        }
+
+        .hr {
+            width: 100%;
+        }
+
+        .margin-top {
+            margin-top: 40px;
+        }
+
+        .text3 {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .child-section-left {
+            float: left;
+            width: 50%;
+        }
+
+        .child-section-right {
+            float: left;
+            width: 50%;
+        }
+
+        .text4 {
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        .text5 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .text6 {
+            font-weight: bold;
+        }
+
+        .blue {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .section-right {
+            float: left;
+            width: 40%;
+            margin-left: 50px;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        .child-section-left1 {
+            float: left;
+            width: 50%;
+        }
+
+        .child-section-right1 {
+            float: left;
+            width: 50%;
+        }
+
+        .child-section-right1 p{
+            text-align: right;
+        }
+
+        .hr1 {
+            background-color: white;
+            width: 100%;
+            height: 2px;
+        }
+
+        footer {
+            border-top: 2px solid black;
+            width: 100%;
+        }
+
+        .text7 {
+            float: left;
+            margin-left: 20px;
+        }
+
+        .footer-ul {
+            float: left;
+            width: 60%;
+            list-style: none;
+        }
+
+        .footer-li {
+            float: left;
+        }
+
+        .footer-li a {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="sitename-ul">
+            <li class="sitename-li">Site Name</li>
+        </ul>
+
+        <ul class="category-ul">
+            <li class="category-li"><a href="#">Category 1</a></li>
+            <li class="category-li">|</li>
+            <li class="category-li"><a href="#">Category 2</a></li>
+            <li class="category-li">|</li>
+            <li class="category-li"><a href="#">Category 3</a></li>
+        </ul>
+
+        <div class="right-header">
+            <p>Cart (1)</p>
+        </div>
+    </header>
+    <section>
+        <div class="section-left">
+            <p class="text1">Order 131217312</p>
+            <p class="text1">Thank you, Kenny!</p>
+
+            <hr class="hr">
+
+            <p class="text2">Your order is confirmed.</p>
+            <p class="text2">We've accepted your order and we're getting it ready.</p>
+
+            <hr class="hr margin-top">
+
+            <p class="text3">Customer Information</p>
+
+            <div class="child-section-left">
+                <p class="text4">Shipping Address</p>
+                <p class="text5">Kenny Bostick</p> 
+                <p class="text5 blue">12 Waldo Point Road</p>
+                <p class="text5 blue">Mishauken, NY 11200</p>
+                <p class="text5 blue">United States</p> 
+                
+            </div>
+            <div class="child-section-right">
+                <p class="text4">Billing Address</p>
+                <p class="text5">Kenny Bostick</p>
+                <p class="text5 blue">12 Waldo Point Road</p>
+                <p class="text5 blue">Mishauken, NY 11200</p>
+                <p class="text5 blue">United States</p> 
+            </div>
+
+            <div class="child-section-left">
+                <p class="text4">Shipping Method</p>
+                <p class="text5">UPS Ground (Estimated ship</p> 
+                <p class="text5">time of 3-6 days)</p>
+                
+            </div>
+            <div class="child-section-right">
+                <p class="text4">Payment Method</p>
+                <p class="text5">Ending in 3217 - $23.60</p>
+            </div>
+
+            <hr class="hr margin-top">
+        </div>
+        <div class="section-right">
+            <p class="text6">Summary (1 item)</p>
+
+            <div class="child-section-left1">
+                <p>Subtotal</p>
+                <p>Shipping</p>
+                <p>Est. Taxes</p>
+            </div>
+            <div class="child-section-right1">
+                <p>$20.00</p>
+                <p>$2.20</p>
+                <p>$1.40</p>
+            </div>
+
+            <hr class="hr1">
+
+            <p>Gift card or discount code</p>
+            
+            <table>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="button" value="Apply"></td>
+                </tr>
+            </table>
+
+            <hr class="hr1">
+
+            <div class="child-section-left1">
+                <p>Total</p>
+            </div>
+            <div class="child-section-right1">
+                <p>$23.60</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="text7">Site Name</p>
+
+        <ul class="footer-ul">
+            <li class="footer-li"><a href="#">Category X</a></li>
+            <li class="footer-li"> | </li>
+            <li class="footer-li"><a href="#">Category Y</a></li>
+            <li class="footer-li"> | </li>
+            <li class="footer-li"><a href="#">Category Z</a></li>
+        </ul>
+
+        <!-- <P>Stay In Touch! Join our Newsletter.</P> -->
+        <table>
+            <tr>
+                <td colspan="2">Stay In Touch! Join our Newsletter.</td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Enter Email"></td>
+                <td><input type="button" value="Subscribe"></td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
